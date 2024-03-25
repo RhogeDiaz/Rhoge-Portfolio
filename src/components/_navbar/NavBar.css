@@ -1,0 +1,36 @@
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+nav > ul {
+    background-color: inherit;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    align-items: center;
+}
+
+li {
+    list-style-type: none;
+}
+
+nav > ul > li > a {
+    text-decoration-line: none;
+    color: inherit;
+    z-index: 3;
+}
+
+nav > ul > li > a:hover {
+    text-decoration-line: underline;
+}

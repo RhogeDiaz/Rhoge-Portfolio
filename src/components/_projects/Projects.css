@@ -1,0 +1,63 @@
+#projects {
+    padding: 4rem;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30rem;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.image-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    border-bottom: 2px solid;
+}
+
+.image-wrapper > img {
+    aspect-ratio: 1.65/1;
+    object-fit: cover;
+    width: 100%;
+    object-position: center;
+    transition: 100ms ease-in-out;
+}
+
+.project-name {
+    text-align: center;
+    font-weight: 700;
+}
+
+.description {
+    text-align: justify;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+.links {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.image-wrapper:hover > img {
+    filter: blur(5px);
+    transform: scale(1.01);
+}

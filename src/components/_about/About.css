@@ -1,0 +1,40 @@
+.about-page {
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+    margin: 2.5rem 0;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1.5rem;
+}
+
+.about-container > img {
+    aspect-ratio: 1/1;
+    max-width: 30%;
+    border: 3px var(--gray) solid;
+    border-radius: 50%;
+}
+
+#rhoge {
+    background: -webkit-linear-gradient(rgb(0, 126, 199) 000, #c400ce);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-name {
+    font-size: var(--fs-500);
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.about-description {
+    font-size: calc(var(--fs-500) - 1rem);
+    font-weight: 500;
+    text-align: start;
+}

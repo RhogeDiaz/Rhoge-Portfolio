@@ -1,0 +1,42 @@
+header > .name-container {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1rem 3rem;
+    font-weight: 600;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.hero-text > h1 {
+    text-align: center;
+    margin: -3px;
+    font-weight: 500;
+    font-size: clamp(2.5rem, 10vw, 4rem);
+    max-width: 80%;
+}
+
+.details {
+    margin-bottom: 10rem;
+}
+
+.details > ul {
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    align-items: center;
+}
+
+.details > ul > li {
+    border-radius: 50px;
+    border-style: none;
+    padding: 0.5rem 0.8rem;
+    background-color: var(--accent);
+    text-align: center;
+}

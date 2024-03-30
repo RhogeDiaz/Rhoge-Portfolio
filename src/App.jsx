@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './App.css'
 import EndText from './components/_endText/EndText'
 import Footer from './components/_footer/Footer'
 import Hero from './components/_hero/Hero'
@@ -11,21 +10,23 @@ import { FaLightbulb } from "react-icons/fa";
 import About from './components/_about/About'
 
 function App() {
-  const [isDark, setIsDark] = useState(false)
-  const [mode, setMode] = useState('')
-  const handleDarkMode = () => {
-    setIsDark(!isDark)
+  const [dark, setDark] = useState(false)
+  const toggleDarkmode = () => {
+    setDark(!dark)
   }
   return (
-    <div data-theme={isDark ? "dark" : "light"} className='page'>
-      <button className={isDark ? "light" : "dark"} onClick={() => handleDarkMode()}>{isDark ? <FaRegLightbulb className='bulb' /> : <FaLightbulb className='bulb' />}</button>
-      <NavBar />
-      <Hero />
-      <About />
-      <Skills />
-      <Projects />
-      <EndText />
-      <Footer />
+    <div className={dark && 'dark'}>
+      <div className='dark:bg-[var(--darkMode)]'>
+        <NavBar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <EndText />
+        <Footer />
+      </div>
+      <button className='fixed bottom-3 right-3 dark:bg-white rounded-full p-3 bg-[var(--darkMode)] md:bottom-16 md:right-16 md:p-4' onClick={toggleDarkmode}>{dark ? <FaLightbulb /> : <FaRegLightbulb className='text-white' />}</button>
+
     </div>
   )
 }

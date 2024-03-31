@@ -32,20 +32,20 @@ const NavBar = () => {
                         </a>
                     </li>
                 </ul>
-                <ul className='flex-wrap gap-4 items-center p-4 hidden md:flex dark:text-white'>
-                    <li>
+                <ul className='flex-wrap gap-12 items-center p-4 hidden md:flex dark:text-white '>
+                    <li className=' hover:underline'>
                         <a id="homeNav" href="#container">Home</a>
                     </li>
-                    <li>
+                    <li className=' hover:underline'>
                         <a id="aboutNav" href="#about">About</a>
                     </li>
-                    <li>
+                    <li className=' hover:underline'>
                         <a id="skillsNav" href="#skills">Skills</a>
                     </li>
-                    <li>
+                    <li className=' hover:underline'>
                         <a id="projectsNav" href="#projects">Projects</a>
                     </li>
-                    <li>
+                    <li className=' hover:underline'>
                         <a id="contactNav" href="#contact">Contact</a>
                     </li>
                 </ul>

@@ -9,7 +9,7 @@ const Skills = () => {
     })
     return (
         <>
-            <div className='flex p-4 items-center flex-col my-8 md:py-24 dark:text-white' id='skills' data-aos="fade-down" data-aos-duration="2000">
+            <div className='flex p-4 items-center flex-col my-8 py-16 md:py-24 dark:text-white' id='skills' data-aos="fade-down" data-aos-duration="2000">
                 <p className='mb-8 font-semibold text-2xl decoration-solid underline md:text-4xl'>Skills</p>
                 <ul className='flex flex-wrap gap-8 justify-center'>
                     {skills.map((skill, index) => {

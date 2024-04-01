@@ -11,10 +11,11 @@ const Skills = () => {
         <>
             <div className='flex p-4 items-center flex-col my-8 py-16 md:py-24 dark:text-white' id='skills' data-aos="fade-down" data-aos-duration="2000">
                 <p className='mb-8 font-semibold text-2xl decoration-solid underline md:text-4xl'>Skills</p>
-                <ul className='flex flex-wrap gap-8 justify-center'>
+                <ul className='flex flex-wrap gap-8 justify-center md:max-w-4xl'>
                     {skills.map((skill, index) => {
                         return (
                             <>
+                                {/* for pc */}
                                 <li className='md:flex border-2 rounded-3xl items-center gap-1 p-2 hidden' key={index}>
                                     <img
                                         className="aspect-square w-8"
@@ -23,6 +24,7 @@ const Skills = () => {
                                     />
                                     <p>{skill.title}</p>
                                 </li>
+                                {/* for mobile */}
                                 <li className='flex border-2 rounded-3xl items-center gap-1 p-2 md:hidden dark:bg-[var(--lightMode)] dark:border-none' key={index}>
                                     <img
                                         className="aspect-square w-8"

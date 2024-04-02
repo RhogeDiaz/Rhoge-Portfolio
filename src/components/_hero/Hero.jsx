@@ -15,7 +15,7 @@ const Hero = () => {
             </header>
             <div className='md:pb-24 md:mt-8'>
                 <div className="flex flex-col items-center" data-aos="fade-down" data-aos-duration="2000">
-                    <h1 className='text-center font-medium text-4xl mx-4 p-4 md:text-6xl md:mx-8 lg:mx-16 dark:text-white'>
+                    <h1 className='text-center font-medium text-4xl mx-4 p-4 md:text-6xl md:mx-8 lg:max-w-5xl lg:mx-16 dark:text-white'>
                         A website developer helping clients establish their brands
                     </h1>
                 </div>

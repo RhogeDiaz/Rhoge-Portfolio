@@ -17,15 +17,15 @@ const Footer = () => {
                     <p>rvadiaz09@gmail.com</p>
                 </div>
                 <div class=" fixed bottom-12 left-0 right-0 flex justify-center">
-                    <a href='/assets/pdf/Resume-Rhoge-Diaz.pdf' target='_blank'
-                    ><button
+                    {/* <a href='/assets/pdf/Resume-Rhoge-Diaz.pdf' target='_blank' */}
+                    <a><button
                         className='text-white text-xs bg-black border-none p-3 rounded-full font-semibold md:text-base dark:text-black dark:bg-white'
                         onclick=""
                         data-aos="fade-up"
                         data-aos-duration="2000"
                     >
-                            View Resume
-                        </button>
+                        View Resume
+                    </button>
                     </a>
                 </div>
 
